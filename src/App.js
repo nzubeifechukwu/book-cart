@@ -1,8 +1,12 @@
 import React from "react";
-import { books } from "./books";
+import Book from "./Book";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Book />
+    </>
+  );
 }
 
 export default App;
