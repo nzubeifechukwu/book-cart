@@ -4,7 +4,9 @@ import Book from "./Book";
 function App() {
   return (
     <>
-      <Book />
+      <div className="container">
+        <Book />
+      </div>
     </>
   );
 }

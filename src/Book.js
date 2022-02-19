@@ -10,19 +10,27 @@ const Book = () => {
   return (
     <>
       <h1>{title}</h1>
-      {books.map((book) => {
-        const { id, title, author, price, image } = { ...book };
-        return (
-          <section key={id} className="book">
-            <img src={image} alt="" />
-            <h2>{title}</h2>
-            <h3>{author}</h3>
-            <h4>{price}</h4>
-            <button onClick={() => clearBook(id)}>remove book</button>
-          </section>
-        );
-      })}
-      <button onClick={() => setBooks([])}>Clear all books</button>
+      <section className="bookList">
+        {books.map((book) => {
+          const { id, title, author, price, image } = { ...book };
+          return (
+            <section key={id} className="book">
+              <img src={image} alt="" />
+              <article className="bookDesc">
+                <h2>{title}</h2>
+                <h3>{author}</h3>
+                <h4>{price}</h4>
+              </article>
+              <button className="removeBtn" onClick={() => clearBook(id)}>
+                remove
+              </button>
+            </section>
+          );
+        })}
+      </section>
+      <button className="clearBtn" onClick={() => setBooks([])}>
+        Clear all books
+      </button>
     </>
   );
 };
