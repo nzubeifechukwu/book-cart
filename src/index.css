@@ -5,12 +5,35 @@
 }
 
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background: #fec5bb;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: #7f5539;
   color: #6b705c;
   text-align: center;
 }
 
+main {
+  background: white;
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/*
+display: flex;
+  justify-content: center;
+  align-items: center; 
+--radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+width: 90vw;
+  margin: 5rem 0;
+  max-width: var(--fixed-width);
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--dark-shadow); */
 h1 {
   margin-top: 4rem;
   margin-bottom: 5rem;
@@ -20,7 +43,6 @@ h1 {
   display: flex;
   margin: 2rem auto;
   max-width: 50vw;
-  /* padding: 1rem; */
   justify-content: space-between;
 }
 
@@ -49,20 +71,20 @@ img {
 }
 
 .clearBtn {
-   background: #6b705c;
-   border-color: transparent;
-   cursor: pointer;
-   color: #fec5bb;
-   font-weight: bold;
-   text-transform: uppercase;
-   border-radius: 2.5%;
-   padding: 0.5rem 2rem;
-   margin-bottom: 4rem;
-   margin-top: 2rem;
-   transition: all 0.3s ease-in;
+  width: 70%;
+  background: #7f5539;
+  border-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2rem;
+  margin: 2rem;
+  transition: all 0.3s ease-in;
 }
 
 .clearBtn:hover {
   background-color: #a5a58d;
-  color: #7f5539;
+  color: #fec5bb;
 }
